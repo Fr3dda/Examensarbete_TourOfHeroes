@@ -1,0 +1,18 @@
+<div class="sidebar-opener" (click)="sidebarShow = !sidebarShow">
+  <button>Open Sidebar</button>
+</div>
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+  <div class="sidebar-close" (click)="sidebarShow = !sidebarShow">X</div>
+  <div class="sidebar-content">
+    <div class="tour-of-heroes-top-header">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="tour-of-heroes-top-nav">
+      <nav>
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/heroes">Heroes</a>
+      </nav>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

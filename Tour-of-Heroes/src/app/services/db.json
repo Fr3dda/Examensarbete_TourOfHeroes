@@ -1,0 +1,16 @@
+{
+  "posts" : [
+      {"id": 1, "title": "json-server", "author": "typicode"}
+  ],
+  "heroes" : [
+      {"id": 1, "name": "The Ancient One", "postId": 1},
+      {"id": 12, "name": "Then Ancient Hamburger", "superpower": "Infinity Hamburgers", "faction": "High Town"},
+      {"id": 13, "name": "Wallhugger", "superpower": "Can't see walls", "faction": "High Town"},
+      {"id": 14, "name": "Mr. Clumsy", "superpower": "Negative Luck", "faction": "Westeras"},
+      {"id": 15, "name": "Slow Run", "superpower": "Slow-motion moves", "faction": "Clocktower"},
+      {"id": 16, "name": "Panda-man", "superpower": "Looks like a Panda", "faction": "Some jungle"},
+      {"id": 17, "name": "Turnaround", "superpower": "Walks backwards", "faction": "Western Outlands"},
+      {"id": 18, "name": "Blind-Deaf Guy", "superpower": "Can't hear, can't see", "faction": "The moon"}
+  ],
+  "profile": {"name": "typicode"}
+}

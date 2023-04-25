@@ -1,0 +1,23 @@
+<h2>Top Heroes</h2>
+
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">name</th>
+        <th scope="col">superpower</th>
+        <th scope="col">faction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroes">
+        <th scope="row">{{hero.id}}</th>
+        <td>{{hero.name}}</td>
+        <td>{{hero.superpower}}</td>
+        <td>{{hero.faction}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
