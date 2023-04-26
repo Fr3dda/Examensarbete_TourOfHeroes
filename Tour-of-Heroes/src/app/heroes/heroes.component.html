@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row mt-2">
+    <div class="create-btn">
+      <a class="btn" routerLink="/create">Create</a>
+    </div>
+  </div>
+  <table class="table">
+	<!-- code hidden for display purpose -->
+  </table>
+</div>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <div class="table-headers">
+          <th scope="col">Id</th>
+          <th scope="col">name</th>
+          <th scope="col">superpower</th>
+          <th scope="col">faction</th>
+        </div>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroes">
+
+        <div class="table-content">
+          <th scope="row">{{hero.id}}</th>
+          <td>{{hero.name}}</td>
+          <td>{{hero.superpower}}</td>
+          <td>{{hero.faction}}</td>
+        </div>
+        <td>
+          <a type="button" class="btn-edit" [routerLink]="['/heroes/edit', hero.id]">Edit</a>
+        </td>
+        <td>
+          <a type="button" class="btn-delete" (click)="deleteHeroes(hero.id)">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

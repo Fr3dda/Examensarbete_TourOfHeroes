@@ -1,6 +1,7 @@
 
 *{
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Sidebar Start */
@@ -17,10 +18,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: rgba(255, 101, 46, 0.116);
     color: green;
 }
 .tour-of-heroes-top-nav{
+    background-color: rgba(255, 101, 46, 0.116);
     display: flex;
     border-bottom: 1px solid black;
     padding-bottom: 2em;
@@ -28,6 +30,8 @@
     align-items: baseline;
     justify-content: space-evenly;
     a{
+        text-decoration: none;
+
         display: flex;
         justify-content: space-evenly;
     }

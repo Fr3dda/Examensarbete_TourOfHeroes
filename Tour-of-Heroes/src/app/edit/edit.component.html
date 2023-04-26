@@ -1,0 +1,30 @@
+<div class="container">
+  <legend>Edit Hero</legend>
+  <form >
+    <div class="mb-3">
+      <label for="Name" class="form-label"> Name </label>
+      <input 
+        type="text" 
+        name="name"  
+        [(ngModel)]="heroForm.name" 
+        class="form-control" id="Name">
+    </div>
+    <div class="mb-3">
+      <label for="Name"  class="form-label"> Superpower </label>
+      <input 
+        type="text" 
+        name="superpower"  
+        [(ngModel)]="heroForm.superpower" 
+        class="form-control" id="Superpower">
+    </div>
+    <div class="mb-3">
+      <label for="Faction"  class="form-label"> Faction </label>
+      <input 
+        type="text" 
+        name="faction"  
+        [(ngModel)]="heroForm.faction" 
+        class="form-control" id="Faction">
+    </div>
+    <button type="button" (click)="updateHero()" class="btn btn-primary">Update</button>
+  </form>
+</div>

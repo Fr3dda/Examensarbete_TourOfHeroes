@@ -10,6 +10,8 @@ import { Heroes } from '../services/heroes';
 })
 export class DashboardComponent implements OnInit {
   heroes: Heroes[] = [];
+  deleteModal: any;
+  idToDelete: number = 0;
   constructor(private heroService : HeroesService) { }
 
   ngOnInit() :void {
