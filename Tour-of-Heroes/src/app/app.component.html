@@ -1,9 +1,11 @@
-<div class="sidebar-opener" (click)="sidebarShow = !sidebarShow">
-  <button>Open Sidebar</button>
-</div>
-<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
-  <div class="sidebar-close" (click)="sidebarShow = !sidebarShow">X</div>
-  <div class="sidebar-content">
+
+<div class="wrapper">
+  <div class="sidebar">
+    <div class="profile">
+      <img src="../assets/profil_n.png" alt="">
+      <h3>Fredrik Lundkvist</h3>
+      <p>Studerande Frontendutvecklare</p>
+    </div>
     <div class="tour-of-heroes-top-header">
       <h1>{{ title }}</h1>
     </div>
@@ -13,6 +15,10 @@
         <a routerLink="/heroes">Heroes</a>
       </nav>
     </div>
+    
   </div>
 </div>
+  
+
+
 <router-outlet></router-outlet>

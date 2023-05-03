@@ -1,0 +1,37 @@
+{
+  "heroes": [
+    {
+      "id": 17,
+      "name": "Turnaround",
+      "superpower": "Walks backwards",
+      "faction": "Western Outlands"
+    },
+    {
+      "id": 23,
+      "name": "Fredrik",
+      "superpower": "Fireball",
+      "faction": "Hogwartz"
+    },
+    {
+      "id": 24,
+      "name": "Timon",
+      "superpower": "Friend with a warthog",
+      "faction": "The Plains of Africa"
+    },
+    {
+      "id": 25,
+      "name": "Pumba",
+      "superpower": "Friends with a Surracate",
+      "faction": "The Plains of Africa"
+    },
+    {
+      "id": 26,
+      "name": "The Newest Hero",
+      "superpower": "Nervous",
+      "faction": "Rookie City"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

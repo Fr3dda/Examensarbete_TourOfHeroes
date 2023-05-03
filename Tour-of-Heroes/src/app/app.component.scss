@@ -1,15 +1,53 @@
 
 *{
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Sidebar Start */
-.sidebar-opener{
-    cursor: pointer;
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
 }
 
 
-/* Sidebar End */
+/* Profile area */
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    margin: 0 auto;
+    object-fit: cover;
+    
+    
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+/* Profile area ends */
+
 
 
 
@@ -17,18 +55,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     color: green;
 }
 .tour-of-heroes-top-nav{
-    display: flex;
-    border-bottom: 1px solid black;
-    padding-bottom: 2em;
 
+    display: flex;
+    padding-bottom: 2em;
     align-items: baseline;
     justify-content: space-evenly;
     a{
+        color: white;
+        text-decoration: none;
         display: flex;
         justify-content: space-evenly;
     }
 }
+
+/* sidebar ends */

@@ -1,0 +1,73 @@
+* {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    box-sizing: border-box;
+
+}
+.container{
+    margin: 1em;
+    margin-left: 20em;
+}
+.table {
+
+    grid-template-columns: 1fr 1fr ; 
+    max-width: 800px;
+    min-width: 500px;
+   
+}
+.table-headers {
+    padding: .5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+
+}
+.col-Id{
+    display: flex;
+}
+.table-content{
+    padding: .5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-aroundi;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(248, 216, 179, 0.082);
+}
+.btn-container:hover {
+    background-color: rgba(0, 0, 0, 0.185);
+}
+.create-btn {
+    padding: .5em;
+    margin-top: 2em;
+    text-decoration: none;
+    background-color: green;
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+.create-btn a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.btn-edit {
+    font-weight: 600;
+    padding: 0.5em;
+    text-decoration: none;
+    color: rgb(12, 139, 0);
+
+    border-radius: 3px;
+}
+.btn-delete {
+    cursor: pointer;
+    color: orangered;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+}

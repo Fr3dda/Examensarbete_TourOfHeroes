@@ -1,0 +1,18 @@
+<div class="container">
+  <legend>Create Hero</legend>
+  <form>
+    <div>
+      <label for="name"> Name:</label>
+      <input type="text" name="name" [(ngModel)]="heroForm.name" id="Name">
+    </div>
+    <div>
+      <label for="superpower"> Superpower:</label>
+      <input type="text" name="superpower" [(ngModel)]="heroForm.superpower" id="Superpower">
+    </div>
+    <div>
+      <label for="faction"> Faction:</label>
+      <input type="text" name="faction" [(ngModel)]="heroForm.faction" id="faction">
+    </div>
+    <button type="button" (click)="createHero()" class="btn btn-primary">Create</button>
+  </form>
+</div>
