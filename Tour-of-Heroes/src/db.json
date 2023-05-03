@@ -1,41 +1,10 @@
 {
   "heroes": [
     {
-      "id": 1,
-      "name": "The Ancient One",
-      "postId": 1,
-      "superpower": "OverPowered",
-      "faction": "Unknown"
-    },
-    {
-      "id": 14,
-      "name": "Mr. Clumsy",
-      "superpower": "Negative Luck",
-      "faction": "Westeras"
-    },
-    {
-      "id": 15,
-      "name": "Slow Runner",
-      "superpower": "Slow-motion moves",
-      "faction": "Clocktower"
-    },
-    {
-      "id": 16,
-      "name": "Panda-man",
-      "superpower": "Looks like a Panda",
-      "faction": "Some jungle"
-    },
-    {
       "id": 17,
       "name": "Turnaround",
       "superpower": "Walks backwards",
       "faction": "Western Outlands"
-    },
-    {
-      "id": 18,
-      "name": "Blind-Deaf Guy",
-      "superpower": "Can't hear, can't see",
-      "faction": "The moon"
     },
     {
       "id": 23,

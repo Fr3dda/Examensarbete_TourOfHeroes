@@ -1,19 +1,20 @@
 <div class="container">
+
+  <h3> Heroes</h3>
+  <p>Here you can see an overview of the heroes that are ready to fuck shit up, aswell as create new ones, delete those who has fallen in combat or edit a hero if the hero has evolved or just wanted a change.</p>
   <div class="row mt-2">
     <div class="create-btn">
-      <a class="btn" routerLink="/create">Create</a>
+      <a routerLink="/create">Create</a>
     </div>
   </div>
-  <table class="table">
-	<!-- code hidden for display purpose -->
-  </table>
+
 </div>
 <div class="container">
   <table class="table">
     <thead>
       <tr>
         <div class="table-headers">
-          <th scope="col">Id</th>
+          <th class="col-Id" scope="col">Id</th>
           <th scope="col">name</th>
           <th scope="col">superpower</th>
           <th scope="col">faction</th>
@@ -23,17 +24,17 @@
     <tbody>
       <tr *ngFor="let hero of heroes">
 
-        <div class="table-content">
-          <th scope="row">{{hero.id}}</th>
+        <div class="table-content" >
+          <td>{{hero.id}}</td>
           <td>{{hero.name}}</td>
           <td>{{hero.superpower}}</td>
           <td>{{hero.faction}}</td>
         </div>
-        <td>
-          <a type="button" class="btn-edit" [routerLink]="['/heroes/edit', hero.id]">Edit</a>
+        <td class="btn-container">
+          <a type="button" class="btn-edit" [routerLink]="['/heroes/edit', hero.id]"> Edit </a>
         </td>
-        <td>
-          <a type="button" class="btn-delete" (click)="deleteHeroes(hero.id)">Delete</a>
+        <td class="btn-container">
+          <a aria-label="delete" type="button" class="btn-delete" (click)="deleteHeroes(hero.id)"> X </a>
         </td>
       </tr>
     </tbody>
